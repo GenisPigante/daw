@@ -20,11 +20,38 @@
     </head>
     <body>
         <div class="container">
-            <div class="jumbotron"> 
-                <h1>Oz</h1>
-                <h2>listar ficha de foragidos</h2>
-            </div>
-        <table class="table-bordered">
+             <nav class="navbar navbar-inverse" style="margin-bottom: 0px;">
+                        <div class="container-fluid">
+                          <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarContent">
+                              <span class="icon-bar"></span>
+                              <span class="icon-bar"></span>
+                              <span class="icon-bar"></span>
+                            </button>
+                            <a href="index.jsp" class="navbar-brand">Delegacia</a>
+                          </div>
+                          <div class="collapse navbar-collapse" id="navbarContent">
+                            <ul class="nav navbar-nav">
+                              <li><a href="cadastra-fichapolicial.jsp">Cadastrar Meliante</a></li>
+                              <li><a href="altera.jsp">Alterar ficha</a></li>
+                              <li><a href="listar.jsp.jsp">Listar Todos</a></li>
+                              <li><a href="listaForagidos.jsp">Listar Foragidos</a></li>
+                              <li><a href="remover.jsp">Remover</a></li>
+                              
+
+                            </ul>
+                          </div>
+                        </div>
+                      </nav>
+                <div class="jumbotron">
+                    <h1>Delegacia <small>listar foragidos</small></h1>
+                    <br>    
+                </div>
+            
+            
+            
+        <div class="table-responsive"> 
+          <table class="table table-striped table-bordered">
             <thead>
             <td>Nome</td>
             <td>CPF</td>
@@ -51,14 +78,14 @@
             <td> <%= delito.getHora()%> </td>
             <td> <%= delito.getLocal()%> </td>
             <td> <%= delito.getEstado()%> </td>
-            <td> <img src="<%= delito.getAvatar()%>" alt="avatarum" width="30px" height="30px" > </td>
+            <td> <img src="<%= delito.getAvatar()%>" alt="avatarum" class="img-responsive"  > </td>
 
         </tr>
         <%
             }
         %>
     </table>
-    <a href="index.jsp">Voltar</a><br>
+ 
         </div>
 </body>
 </html>
