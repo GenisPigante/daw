@@ -33,7 +33,7 @@
             <td>Hora</td>
             <td>Local</td>
             <td>Estado</td>
-            <td>Avatar</td>
+    
         </thead>
         <%
             FichaPoliciaDao dao = new FichaPoliciaDao();
@@ -51,7 +51,7 @@
             <td> <%= delito.getHora()%> </td>
             <td> <%= delito.getLocal()%> </td>
             <td> <%= delito.getEstado()%> </td>
-            <td> <img src="<%= delito.getAvatar()%>" alt="avatarum" width="30px" height="30px" > </td>
+           
         </tr>
         <%
             }

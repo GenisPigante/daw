@@ -17,24 +17,51 @@
     </head>
     <body>
         <div class="container">
-            <div class="jumbotron"> 
-                <h1>Oz</h1>
-                <h2>Ficha Policial</h2>
-            </div>
-                   
 
+                    <nav class="navbar navbar-inverse" style="margin-bottom: 0px;">
+                        <div class="container-fluid">
+                          <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarContent">
+                              <span class="icon-bar"></span>
+                              <span class="icon-bar"></span>
+                              <span class="icon-bar"></span>
+                            </button>
+                            <a href="index.jsp" class="navbar-brand">Delegacia</a>
+                          </div>
+                          <div class="collapse navbar-collapse" id="navbarContent">
+                            <ul class="nav navbar-nav">
+                              <li><a href="cadastra-fichapolicial.jsp">Cadastrar Meliante</a></li>
+                              <li><a href="altera.jsp">Alterar Meliante</a></li>
+                              <li><a href="listar.jsp.jsp">Listar Todos</a></li>
+                              <li><a href="listaForagidos.jsp">Listar Foragidos</a></li>
+                              <li><a href="remover.jsp">Remover</a></li>
+                              
+
+                            </ul>
+                          </div>
+                        </div>
+                      </nav>
+                <div class="jumbotron">
+                    <h1>Delegacia <small>cadastrar</small></h1>
+                    <br>    
+                </div>
+
+            
                     <form action="mvc">
                         <input type="text" style="display: none;" value="AdicionaContatoLogic" name="logica" />
-                            Nome: <input type="text" name="nome"/><br><br>
-                            cpf: <input type="text" name="cpf"/><br><br>
-                            Residencia: <input type="text" name="residencia"/><br><br>
-                            Delito: <input type="text" name="delito"/><br><br>
-                            Data: <input type="text" name="data"/><br><br>
-                            Hora: <input type="text" name="hora"/><br><br>
-                            Local: <input type="text" name="local"/><br><br>
-                            Estado: <input type="text" name="estado"/><br><br>
-                            Avatar: <input type="text" name="avatar"/><br><br>
-                        <input type="submit"></input> 
+                        <span class="label label-default">Nome</span> <input type="text" class="form-control" id="usr" name="nome"><br><br>
+                        <span class="label label-default">CPF</span> <input type="text" class="form-control" id="usr" name="cpf"/><br><br>
+                        <span class="label label-default">Residencia</span> <input type="text" class="form-control" id="usr" name="residencia"/><br><br>
+                        <span class="label label-default">Delito</span> <input type="text" class="form-control" id="usr" name="delito"/><br><br>
+                        <span class="label label-default">Data</span> <input type="text" class="form-control" id="usr" name="data"/><br><br>
+                        <span class="label label-default">Hora</span> <input type="text" class="form-control" id="usr" name="hora"/><br><br>
+                        <span class="label label-default">Local</span> <input type="text" class="form-control" id="usr" name="local"/><br><br>
+                        <span class="label label-default">Estado</span> <input type="text" class="form-control" id="usr" name="estado"/><br><br>
+                        <span class="label label-default">Avatar</span> <input type="text" class="form-control" id="usr" name="avatar"/><br><br>
+                        <p class="pager" style="line-height: 70px;">
+                            
+                            <input type="submit" class="btn btn-inverse btn-large" value="Submit"/>
+                        </p>
                     </form>
                           <a href="index.jsp">Voltar</a><br>
         </div>
