@@ -19,11 +19,38 @@
     </head>
     <body>
         <div class="container">
-            <div class="jumbotron"> 
-                <h1>Oz</h1>
-                <h2>Remover</h2>
-            </div>
-        <table class="table-bordered">
+             <nav class="navbar navbar-inverse" style="margin-bottom: 0px;">
+                        <div class="container-fluid">
+                          <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarContent">
+                              <span class="icon-bar"></span>
+                              <span class="icon-bar"></span>
+                              <span class="icon-bar"></span>
+                            </button>
+                            <a href="index.jsp" class="navbar-brand">Delegacia</a>
+                          </div>
+                          <div class="collapse navbar-collapse" id="navbarContent">
+                            <ul class="nav navbar-nav">
+                              <li><a href="cadastra-fichapolicial.jsp">Cadastrar Meliante</a></li>
+                              <li><a href="altera.jsp">Alterar ficha</a></li>
+                              <li><a href="listar.jsp.jsp">Listar Todos</a></li>
+                              <li><a href="listaForagidos.jsp">Listar Foragidos</a></li>
+                              <li><a href="remover.jsp">Remover</a></li>
+                              
+
+                            </ul>
+                          </div>
+                        </div>
+                      </nav>
+                <div class="jumbotron">
+                    <h1>Delegacia <small>listar foragidos</small></h1>
+                    <br>    
+                </div>
+            
+            
+            
+        <div class="table-responsive"> 
+          <table class="table table-striped table-bordered">
             <thead>
             <td>ID</td>
             <td>Nome</td>
@@ -34,7 +61,7 @@
             <td>Hora</td>
             <td>Local</td>
             <td>Estado</td>
-            <td>Avatar</td>
+      
         </thead>
         <%
             FichaPoliciaDao dao = new FichaPoliciaDao();
@@ -52,7 +79,6 @@
             <td> <%= delito.getHora()%> </td>
             <td> <%= delito.getLocal()%> </td>
             <td> <%= delito.getEstado()%> </td>
-            <td> <img src="<%= delito.getAvatar()%>" alt="avatarum" width="30px" height="30px" > </td>
         </tr>
         <%
             }
@@ -61,10 +87,13 @@
 
                     <form action="mvc">
                         <input type="text" style="display: none;" value="RemoverMelianteLogic" name="logica" />
-                            ID da ficha a ser removida: <input type="text" name="id"/><br><br>
-                        <input type="submit"></input> 
+                        <span class="label label-default"> ID da ficha a ser removida</span> <input type="text" class="form-control" id="usr" name="id"/><br><br>
+                        <p class="pager" style="line-height: 70px;">
+                            
+                            <input type="submit" class="btn btn-inverse btn-large" value="Submit"/>
+                        </p>
                     </form>
-                          <a href="index.jsp">Voltar</a><br>
+                       
         </div>
     </body>
 </html>
