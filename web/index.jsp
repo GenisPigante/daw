@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-    <head>
+ 
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
             <!-- Latest compiled and minified CSS -->
@@ -15,7 +15,7 @@
             <!-- Latest compiled and minified JavaScript -->
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
     </head>
-    </head>
+
     <body>
          <div class="container">
             <div class="jumbotron"> 

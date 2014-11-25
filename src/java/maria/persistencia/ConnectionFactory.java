@@ -17,8 +17,8 @@ public Connection getConnection() throws SQLException{
 DriverManager.registerDriver(new com.mysql.jdbc.Driver());
 try {
 
-return DriverManager.getConnection("jdbc:mysql://150.164.102.160/daw-aluno2","daw-aluno2","daw02");
-//return DriverManager.getConnection("jdbc:mysql://localhost/escola","root","");
+//return DriverManager.getConnection("jdbc:mysql://150.164.102.160/daw-aluno2","daw-aluno2","daw02");
+return DriverManager.getConnection("jdbc:mysql://localhost/daw-aluno2","root","");
 } catch (SQLException ex) {
 throw new RuntimeException(ex);
 }

@@ -31,7 +31,7 @@
                           <div class="collapse navbar-collapse" id="navbarContent">
                             <ul class="nav navbar-nav">
                               <li><a href="cadastra-fichapolicial.jsp">Cadastrar Meliante</a></li>
-                              <li><a href="altera.jsp">Alterar Meliante</a></li>
+                              <li><a href="altera.jsp">Alterar ficha</a></li>
                               <li><a href="listar.jsp.jsp">Listar Todos</a></li>
                               <li><a href="listaForagidos.jsp">Listar Foragidos</a></li>
                               <li><a href="remover.jsp">Remover</a></li>
@@ -63,7 +63,7 @@
                             <input type="submit" class="btn btn-inverse btn-large" value="Submit"/>
                         </p>
                     </form>
-                          <a href="index.jsp">Voltar</a><br>
+                          
         </div>
     </body>
 </html>
