@@ -7,7 +7,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
+            <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
             <!-- Latest compiled and minified CSS -->
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
 
@@ -84,7 +84,7 @@
             }
         %>
     </table>
-
+        </div>
                     <form action="mvc">
                         <input type="text" style="display: none;" value="RemoverMelianteLogic" name="logica" />
                         <span class="label label-default"> ID da ficha a ser removida</span> <input type="text" class="form-control" id="usr" name="id"/><br><br>
