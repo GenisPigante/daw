@@ -96,7 +96,6 @@
                         <span class="label label-default">Hora</span> <br><input type="text" class="form-control" id="usr" name="hora"/><br><br>
                         <span class="label label-default">Local</span> <br><input type="text" class="form-control" id="usr" name="local"/><br><br>
                         <span class="label label-default">Estado</span> <br><input type="text" class="form-control" id="usr" name="estado"/><br><br>
-                        <span class="label label-default">Avatar</span> <br><input type="text" class="form-control" id="usr" name="avatar"/><br><br>
                         <p class="pager" style="line-height: 70px;">
                             <input type="submit" class="btn btn-inverse btn-large" value="Submit"/>
                         </p>
